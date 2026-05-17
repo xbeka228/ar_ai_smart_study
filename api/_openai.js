@@ -2,7 +2,10 @@ const openaiApiKey = process.env.OPENAI_API_KEY || '';
 const openaiModel = process.env.OPENAI_MODEL || 'gpt-5.4-mini';
 
 function sendJson(response, statusCode, payload) {
-  response.status(statusCode).json(payload);
+  response.writeHead(statusCode, {
+    'Content-Type': 'application/json; charset=utf-8',
+  });
+  response.end(JSON.stringify(payload));
 }
 
 function extractText(data) {
