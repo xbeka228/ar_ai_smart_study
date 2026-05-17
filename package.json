@@ -1,5 +1,6 @@
 {
   "name": "ar-ai-smart-study-vercel-backend",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "main": "index.js"
 }
