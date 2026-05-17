@@ -1,6 +1,9 @@
 # Miscellaneous
+.DS_Store
+.idea/
 *.class
 *.lock
+!pubspec.lock
 *.log
 *.pyc
 *.swp
