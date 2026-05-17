@@ -1,13 +1,17 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/health",
-      "destination": "/api/health"
+      "src": "/health",
+      "dest": "/api/health.js"
     },
     {
-      "source": "/ai",
-      "destination": "/api/ai"
+      "src": "/ai",
+      "dest": "/api/ai.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
   ]
 }
