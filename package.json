@@ -2,5 +2,7 @@
   "name": "ar-ai-smart-study-vercel-backend",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js"
+  "scripts": {
+    "build": "echo \"Vercel API functions ready\""
+  }
 }
